@@ -1,0 +1,14 @@
+service: image-analyzer
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  image-analysis:
+    handler: index.main
+    events:
+      - httpApi:
+          path: /analyze
+          method: get
