@@ -1,0 +1,14 @@
+{
+  "name": "dynamodb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "aws-sdk": "^2.1403.0"
+  },
+  "scripts": {
+    "invoke-local":"sls invoke local -f heroes-insert --path request-mock/hero.insert.json",
+    "invoke": "sls invoke -f heroes-insert --path request-mock/hero.insert.json"
+  }
+}
