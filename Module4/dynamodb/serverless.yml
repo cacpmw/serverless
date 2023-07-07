@@ -13,7 +13,7 @@ provider:
         - dynamodb:UpdateItem
         - dynamodb:PutItem
         - dynamodb:ListStreams
-        - dynamodb:DescribeStreams
+        - dynamodb:DescribeStream
       Resource: "arn:aws:dynamodb:${aws:region}:*:table/${self:provider.environment.DYNAMODB_TABLE}"
 
 resources:

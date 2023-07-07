@@ -4,7 +4,7 @@ const decoratorValidator = (fn, schema, argsType)=>{
        const data = JSON.parse(event[argsType])
        //abortEarly shows all error at once
         const { error, value } = await schema.validate(
-            data, {abortEarly: true}
+            data, {abortEarly: false}
         );
         //changes arguments instance
         event[argsType] = value

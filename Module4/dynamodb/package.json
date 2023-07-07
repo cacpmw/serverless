@@ -9,6 +9,7 @@
   },
   "scripts": {
     "invoke-local":"sls invoke local -f heroes-insert --path request-mock/hero.insert.json",
-    "invoke": "sls invoke -f heroes-insert --path request-mock/hero.insert.json"
+    "invoke": "sls invoke -f heroes-insert --path request-mock/hero.insert.json",
+    "logs-heroes-trigger":"sls logs -f heroes-trigger -t"
   }
 }
